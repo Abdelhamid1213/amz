@@ -1,2 +1,1 @@
 # amz
- ecommerce platform
