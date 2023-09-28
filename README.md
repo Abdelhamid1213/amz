@@ -1,0 +1,2 @@
+# amz
+ ecommerce platform
