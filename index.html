@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple To-Do List</title>
   </head>
   <body>
     <div id="container">
       <h1>To-Do List:</h1>
-      <input id="task-input" type="text" placeholder="Enter a task" />
+      <input id="task-input" type="text" placeholder="Enter a task" onkeyup="handleKeyPress(event)" />
       <button onclick="addTask()">Add</button>
       <ul id="list"></ul>
+      <button id="clear-all-btn" onclick="clearAllTasks()">Delete All Tasks</button>
     </div>
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
   </body>
 </html>
