@@ -10,16 +10,28 @@ function addTask() {
     li.innerText = task;
     li.setAttribute("class", "task");
     ul.appendChild(li);
-	close.innerText = "X"
+	close.innerText = "\u00d7"
 	close.setAttribute("class", "close");
 	li.appendChild(close);
+    saveTasks()
   }
 }
 
 list.addEventListener('click', function(element){
 	if (element.target.tagName === "LI"){
 		element.target.classList.toggle("done");
+        saveTasks()
 	} else if (element.target.tagName === "BUTTON"){
 		element.target.parentElement.remove();
+        saveTasks()
 	}
 });
+
+function saveTasks() {
+    localStorage.setItem('tasks', list.innerHTML);
+}
+
+function fetchTasks() {
+    list.innerHTML = localStorage.getItem('tasks');
+}
+fetchTasks()
