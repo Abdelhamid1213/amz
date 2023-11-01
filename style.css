@@ -91,17 +91,17 @@ body {
   .close {
     position: absolute;
     top: 50%;
-    right: 5px;
+    right: 4px;
     transform: translateY(-50%);
-    background-color: #f44336;
+    background-color: #636363;
     color: #fff;
     border: none;
-    padding: 8px;
+    padding: 4px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 20px;
     transition: background-color 0.3s;
-  }
+}
   
   .close:hover {
     background-color: #d32f2f;
@@ -109,7 +109,7 @@ body {
 
   #clear-all-btn {
     padding: 10px;
-    background-color: #f44336;
+    background-color: #636363;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -122,6 +122,7 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    transition: background-color 0.3s;
   }
   
   #clear-all-btn:hover {
